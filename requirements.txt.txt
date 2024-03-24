@@ -1,0 +1,10 @@
+cv2
+numpy
+pandas
+PIL
+ultralytics
+IPython
+roboflow --quiet
+shutil
+os
+torch
