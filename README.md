@@ -8,6 +8,7 @@ We fine-tuned Yolov8 instance segmentation model and trained it from scratch on 
 - **Dataset-1**: Annotation of around 100 tiles to highlight individual greenspace components (e.g. grass, trees, shrubs, etc).
 - **Dataset-2**: 200 images were annotated in a way that greenspace components with overlapping boundaries were merged and labeled as a single greenspace. 
 ![annotations](https://github.com/MohtashimButt/yolov8-for-satellite-imagery/blob/master/Assets/t1.png)
+  
 We further made augmented versions of each dataset, making 4 version in total as follows:  
 
 
