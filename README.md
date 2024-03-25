@@ -12,7 +12,14 @@ We further made augmented versions of each dataset, making 4 version in total as
 
 Datasets | Training | Validation | Testing | Total |
 --- | --- | --- | --- |--- |
-Seconds | 301 | 283 | 290 | 286 |
+ D1_{aug} | 339 (80%) | 53 (13%)|30 (7%)|422|
+
+Datasets | Training | Validation | Testing | Total |
+--- | --- | --- | --- |--- |
+ D1_{aug}      | 339 (80%) | 53 (13%)   | 30 (7%) | 422|
+ D1_{non-aug}  | 80 (70%)  | 13 (20%)   | 7 (10%) | 100|
+ D2_{aug}      | 339 (80%) | 54 (13%)   | 33 (7%) | 426|
+ D2_{non-aug}  | 140 (70%) | 40 (20%)   | 20 (10%)| 200|
 
 Some of the visual results for our fine-tuned model as binary masks are given as follows:    
 ![islo](https://github.com/MohtashimButt/yolov8-for-satellite-imagery/blob/master/Assets/islo.png)
