@@ -1,6 +1,5 @@
 # yolov8-for-satellite-imagery
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/username/repository/blob/master/notebook.ipynb)
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MohtashimButt/yolov8-for-satellite-imagery/blob/master/main_segmentation.ipynb)
 ## Overview
 By employing remote sensing techniques for data collection followed by the segmentation of green spaces using a fine-tuned deep learning model we performed a temporal and spatial analysis of green spaces in the F7 sector. To evaluate the model’s geographic transferrability, inference was also performed on images of urban centers in Karachi and Swat, two cities in Pakistan with contrasting urban infrastructure and landscapes.
 
