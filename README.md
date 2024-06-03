@@ -33,9 +33,5 @@ git clone https://github.com/MohtashimButt/yolov8-for-satellite-imagery.git
 pip install -r requirements.txt
 ```
 - Open the `main_segmentation.ipynb` and make sure that you're connected to the GPU.
-> The pre-trained weights can be accessed from [here](https://drive.google.com/drive/folders/1AyGqVlN0A6nabeJBpwJ1b81_7bb-izpj?usp=sharing) but if you want to train the model from scratch, follow the steps below:
-- Import the desired dataset by uncommenting one of the snippets:  
-![dataset_snip](https://github.com/MohtashimButt/yolov8-for-satellite-imagery/blob/master/Assets/datasets.png)
-- Once you're done exporting, go to `data.yaml` and change the path `train: your_dataset/train/images`-->`train: ../train/images` and `val: your_dataset/valid/images`-->`val: ../valid/images`
-- Run the cell under `Custom Training` with the desired hyperparameters' values.
-- Inference steps are self-explanatory in the notebook
+> The pre-trained weight can be accessed from [here](https://drive.google.com/file/d/1NLJh5ISEsdUsHF5T9bKKjfpEx6d3ZCcI/view?usp=sharing)
+- Download the weight and put it in the same directory.
