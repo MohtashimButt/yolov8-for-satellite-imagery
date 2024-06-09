@@ -32,6 +32,16 @@ git clone https://github.com/MohtashimButt/yolov8-for-satellite-imagery.git
 ```
 pip install -r requirements.txt
 ```
-- Open the `main_segmentation.ipynb` and make sure that you're connected to the GPU.
+- Run the following command in the terminal (opened in the same directory):
+```
+python main_segmentation.py --image_folder [path/to/folder/you/have/your/images/in] --prediction_folder [path/to/folder/you/want/to/save/your/prediction/masks/in] --gt_folder [path/to/folder/you/have/your/ground/truths/in] --IOU [either True or False] --DICE <either True or False>
+```
+```
+- `--image_folder`: it is an `str` value where you'll provide the path to the folder where you've put the satellite images. If you're in the current directory, just give the folder name.
+- `--prediction_folder`: it is an `str` value where you'll provide the path to the folder you want your prediction masks to be saved. If you're in the current directory, just give the folder name.
+- `--gt_folder`: it is an `str` value where you'll provide the path to the folder you have your ground truths in. If you're in the current directory, just give the folder name.
+- `--IOU`: it is a `bool` value. Set is `True` if you want to get the IOU scores for individual prediction and HAVE your ground truths saved in `--gt_folder`
+- `--DICE`: it is a `bool` value. Set is `True` if you want to get the DICE Loss for individual prediction and HAVE your ground truths saved in `--gt_folder`
+```
 > The pre-trained weight can be accessed from [here](https://drive.google.com/file/d/1NLJh5ISEsdUsHF5T9bKKjfpEx6d3ZCcI/view?usp=sharing)
 - Download the weight and put it in the same directory.
