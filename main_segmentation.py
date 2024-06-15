@@ -155,7 +155,7 @@ def calculate_iou(ground_truth, prediction):
 
     # Calculate IoU
     if np.sum(union) == 0:
-      return np.sum(intersection) / (np.sum(mask_gt))
+      return np.sum(intersection) / (np.sum(mask_gt)+0.0000007)
     iou = np.sum(intersection) / (np.sum(union)+0.0000007)
     return iou
 
@@ -170,7 +170,8 @@ if IOU_decision:
         with open('Eval_Metrices/IOU.txt', 'a') as file:
             file.write(f"{i}--> IOU SCORE: {iou_score}\n")
         print(i)
-        iou_score_list.append(iou_score)
+        if iou_score!=0:
+            iou_score_list.append(iou_score)
 
     with open('Eval_Metrices/IOU.txt', 'a') as file:
         file.write(f"Arithmatic mean IoU score: {sum(iou_score_list)/len(iou_score_list)}")
@@ -202,7 +203,7 @@ def calculate_dice_loss(ground_truth, prediction):
     sum_add = np.sum(mask_gt) + np.sum(mask_pred)
 
     # Calculate IoU
-    dice = 2 * np.sum(intersection) / sum_add
+    dice = 2 * np.sum(intersection) / (sum_add+0.0000007)
     return 1-dice
 
 ground_truth_folder_path = fr'Ground_Truth/'
@@ -215,8 +216,9 @@ if DICE_decision:
         with open('Eval_Metrices/DICE.txt', 'a') as file:
             file.write(f"{i}--> DICE LOSS: {dice_loss}\n")
         print(i)
-        dice_loss_list.append(dice_loss)
+        if dice_loss!=1.0:
+            dice_loss_list.append(dice_loss)
 
     with open('Eval_Metrices/DICE.txt', 'a') as file:
-        file.write(f"Arithmatic mean DICE Loss: {sum(iou_score_list)/len(iou_score_list)}")
+        file.write(f"Arithmatic mean DICE Loss: {sum(dice_loss_list)/len(dice_loss_list)}")
     print(f"Your DICE loses have successfully been saved to DICE.txt file in Eval_Metrices folder\nArithmatic Mean DICE LOSS for all images is: {sum(dice_loss_list)/len(dice_loss_list)}")
