@@ -45,3 +45,6 @@ python main_segmentation.py --image_folder [path/to/folder/you/have/your/images/
 ```
 > The pre-trained weight can be accessed from [here](https://drive.google.com/file/d/1NLJh5ISEsdUsHF5T9bKKjfpEx6d3ZCcI/view?usp=sharing)
 - Download the weight and put it in the same directory.
+
+  > Link to the dataset that we used: https://universe.roboflow.com/lums-eo5z1/islo-data-binary_2/dataset/1
+  
